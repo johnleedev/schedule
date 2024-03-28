@@ -1,0 +1,63 @@
+@mixin middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+};
+
+.mainclass {
+  width: 100vw;
+  margin-bottom: 100px;
+  
+  > .inner {
+
+    .mainclass_content {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      min-height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .box {
+        width: 300px;
+        padding: 20px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        border: 1px solid #BDBDBD;
+        border-radius: 10px;
+        margin-bottom: 30px;
+
+        p {
+          font-size: 20px;
+        }
+      }
+      .box:hover {
+        cursor: pointer;
+        border: 1px solid #333;
+      }
+    }
+  }
+ 
+}
+
+
+@media screen and (max-width : 600px) { 
+  
+  
+  .mainclass {
+    width: 100vw;
+    margin-bottom: 100px;
+  
+    > .inner {
+      width: 90%;
+     
+      
+    }
+  }
+}
+
+  
+
+  
